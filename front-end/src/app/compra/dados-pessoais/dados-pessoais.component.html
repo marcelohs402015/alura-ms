@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup">
+    <mat-form-field appearance="fill">
+        <mat-label>Nome Completo</mat-label>
+        <input matInput formControlName="nome">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControlName="email" type="email">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="nextStep()">Next</button>
+</form>

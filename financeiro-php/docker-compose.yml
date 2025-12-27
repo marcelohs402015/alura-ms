@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq
+    ports:
+      - 5672:5672
+  php:
+    build: .
+    command: php index.php
+    ports:
+      - 9501:9501
+    volumes:
+      - ./financeiro-php:/app
+    working_dir: /app
+    depends_on:
+      - rabbitmq

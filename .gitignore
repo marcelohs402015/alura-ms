@@ -1,0 +1,36 @@
+# IDEs
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Dependencies
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

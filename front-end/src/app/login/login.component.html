@@ -1,0 +1,28 @@
+<header>
+  <img src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" alt="Logo Alura">
+</header>
+
+<div id="container">
+  <mat-card>
+    <mat-card-title-group>
+      <mat-card-title>Já estuda com a gente?</mat-card-title>
+      <mat-card-subtitle>Faça seu login e boa aula!</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content>
+      <form [formGroup]="formLogin">
+        <mat-form-field>
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email" type="email">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Senha</mat-label>
+          <input matInput formControlName="senha" type="password">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="login()">Login</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Cursos disponíveis</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let curso of cursosAsync|async">
+        <img mat-list-avatar [src]="curso.icone" aria-hidden="true" alt="">
+        <div mat-line class="linha">
+          {{ curso.titulo }}
+          <span class="spacer"></span>
+
+          <button mat-raised-button
+                  color="primary"
+                  matTooltip="Marcar como assistido"
+                  matTooltipPosition="left"
+                  (click)="assistir(curso)"
+                  [disabled]="curso.assistido">
+            <mat-icon>preview</mat-icon>
+          </button>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

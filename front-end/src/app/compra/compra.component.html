@@ -1,0 +1,41 @@
+<header class="container">
+    <img src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" alt="Logo alura">
+</header>
+<div class="grid container">
+    <div class="col">
+        <mat-stepper linear #stepper>
+            <mat-step label="Dados pessoais" [stepControl]="dadosPessoaisFormGroup">
+              <app-dados-pessoais [formGroup]="dadosPessoaisFormGroup" [stepper]="stepper"></app-dados-pessoais>
+            </mat-step>
+            <mat-step label="Detalhes de pagamento" [stepControl]="detalhesPagamentoFormGroup">
+              <app-detalhes-pagamento [formGroup]="detalhesPagamentoFormGroup" [stepper]="stepper" [email]="dadosPessoaisFormGroup?.get('email')?.value"></app-detalhes-pagamento>
+            </mat-step>
+            <mat-step label="Fim">
+              <app-fim></app-fim>
+            </mat-step>
+        </mat-stepper>
+    </div>
+
+    <div class="col">
+      <mat-card>
+        <mat-card-title-group>
+          <mat-card-title>
+            Informações da sua compra
+          </mat-card-title>
+          <mat-card-subtitle>
+            Plano mega power
+          </mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-content>
+          <p>Valor total do plano <b>R$ 123,45</b></p>
+
+          <p>1234 cursos</p>
+          <mat-list>
+            <mat-list-item>- Estude por 1 ano</mat-list-item>
+            <mat-list-item>- Certificado de participação</mat-list-item>
+            <mat-list-item>- Apps para Android e iOS</mat-list-item>
+           </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>

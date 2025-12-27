@@ -1,0 +1,22 @@
+mat-list mat-list-item img.mat-list-avatar {
+  border-radius: 0;
+}
+
+mat-card {
+  max-width: 500px;
+  margin: 1rem auto 0;
+}
+
+.mat-list-item-content {
+  justify-content: space-between;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-list mat-list-item div.linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,28 @@
+header {
+    border-top: 5px solid #2A7AE4;
+    height: 5em;
+    box-shadow: 1px 1px 1px hsl(0deg 0% 71% / 50%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid > .col:first-child {
+    flex-basis: 70%;
+}
+
+.grid > .col:last-child { 
+    flex-basis: 30%;
+}
+
+mat-form-field {
+    width: 100%
+}

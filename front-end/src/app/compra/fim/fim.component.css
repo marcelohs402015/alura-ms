@@ -1,0 +1,12 @@
+mat-card {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+mat-card-title {
+  color: darkgreen;
+}
+
+mat-card-subtitle {
+  color: green;
+}

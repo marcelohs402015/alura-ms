@@ -1,0 +1,28 @@
+<form [formGroup]="formGroup">
+    <mat-form-field appearance="fill">
+        <mat-label>CPF (Apenas números)</mat-label>
+        <input matInput formControlName="cpf" type="text" inputmode="numeric" pattern="[0-9]{11}" title="11122233344">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Nome do titular do cartão</mat-label>
+        <input matInput formControlName="titular">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Número do cartão</mat-label>
+        <input matInput formControlName="numero" type="text" inputmode="numeric" pattern="[0-9]{14,16}">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Data de expiração</mat-label>
+        <input matInput formControlName="dataExpiracao" type="month" #campoDataExpiracao>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Código de segurança</mat-label>
+        <input matInput formControlName="cvv" type="text" inputmode="numeric" pattern="[0-9]{3,4}">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="nextStep()">Next</button>
+</form>
