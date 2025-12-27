@@ -239,7 +239,7 @@ Este projeto é parte da minha jornada de aprendizado e está disponível para f
 **Desenvolvedor em constante evolução | Preparado para novos desafios**
 
 - **GitHub:** [@marcelohs402015](https://github.com/marcelohs402015)
-- **LinkedIn:** [Conecte-se comigo](https://www.linkedin.com/in/seu-perfil)
+- **LinkedIn:** [Marcelo Hernandes da Silva](https://www.linkedin.com/in/marcelo-hernandes-da-silva-351a7159/)
 
 ---
 
